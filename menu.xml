@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bucketlist>
+    <category name="Trips">
+        <item>
+            <wish>Hawaii</wish>
+            <price>4000</price>
+        </item>
+        <item>
+            <wish>Venice</wish>
+            <price>780</price>
+        </item>
+        <item dogFriendly="true">
+            <wish>Copenhagen</wish>
+            <price>560</price>
+        </item>
+        <item>
+            <wish>Japan</wish>
+            <price>2690</price>
+        </item>
+        <item>
+            <wish>Australia</wish>
+            <price>4500</price>
+        </item>
+        <item dogFriendly="true">
+            <wish>Spain</wish>
+            <price>490</price>
+        </item>
+    </category>
+    <category name="Shows">
+        <item>
+            <wish>Artic Monkeys</wish>
+            <price>73.50</price>
+        </item>
+        <item>
+            <wish>Six</wish>
+            <price>38.50</price>
+        </item>
+        <item dogFriendly="true">
+            <wish>New Years Eve Carnival</wish>
+            <price>11.43</price>
+        </item>
+    </category>
+    <category name="Courses">
+        <item>
+            <wish>React Bootcamp</wish>
+            <price>13.99</price>
+        </item>
+        <item>
+            <wish>Node.js</wish>
+            <price>13.99</price>
+        </item>
+        <item>
+            <wish>Pottery</wish>
+            <price>145</price>
+        </item>
+    </category>
+    <category name="Food">
+        <item>
+            <wish>Wagyu beef</wish>
+            <price>90</price>
+        </item>
+        <item>
+            <wish>Bilberries</wish>
+            <price>70</price>
+        </item>
+        <item>
+            <wish>Truffles</wish>
+            <price>50</price>
+        </item>
+    </category>
+</bucketlist>
