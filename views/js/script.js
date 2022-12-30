@@ -26,17 +26,17 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 
-// This function either turns on or off the row highlighting for decaf
+// This function either turns on or off the row highlighting for dogFriendly
 // items (depending on the value of bshowDogFriendly)
 function highlightDogFriendly(idTable, bshowDogFriendly) {
-    // if bshowDogFriendly is true, then we're highlighting decaf
+    // if bshowDogFriendly is true, then we're highlighting dogFriendly
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);
     var oTBODY = oTable.getElementsByTagName('TBODY')[0];
     var aTRs = oTBODY.getElementsByTagName('TR');
     // walk through each of the table rows and see if it has a 
-    // "decaf" attribute on it.
+    // "dogFriendly" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
         if (aTRs[i].getAttribute('dogFriendly') && aTRs[i].getAttribute('dogFriendly') == "true") {
             if (bshowDogFriendly) {

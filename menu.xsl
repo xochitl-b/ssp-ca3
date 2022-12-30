@@ -18,14 +18,14 @@
 					</tr>
 					<xsl:for-each select="item">
 						<tr>
-							<xsl:attribute name="decaf">
-								<xsl:value-of select="boolean(@decaf)" />
+							<xsl:attribute name="dogFriendly">
+								<xsl:value-of select="boolean(@dogFriendly)" />
 							</xsl:attribute>
 							<td align="center">
 								<input name="item0" type="checkbox" />
 							</td>
 							<td>
-								<xsl:value-of select="listing" />
+								<xsl:value-of select="wish" />
 							</td>
 							<td align="right">
 								<xsl:value-of select="price" />
