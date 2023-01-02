@@ -67,7 +67,7 @@ router.post('/post/delete', function (req,res) {
         XMLtoJSON('menu.xml', function(err, result){
             if (err) throw (err);
 
-            delete result.menu.category[obj.section].item[obj.entree];
+            delete result.bucketlist.category[obj.section].item[obj.entree];
 
             JSONtoXML('menu.xml', result, function(err){
                 if (err) console.log(err);
