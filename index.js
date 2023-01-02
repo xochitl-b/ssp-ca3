@@ -1,3 +1,4 @@
+//declaring constants to be used in functions.
 const   http = require('http'), //HTTP server
         path = require('path'),
         express = require('express'), //Handling HTTP requests & routing
@@ -12,6 +13,7 @@ const   http = require('http'), //HTTP server
         router.use(express.urlencoded({extended: true}));
         router.use(express.json());
 
+//function for turning xml to jason 
 function XMLtoJSON(filename, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     fs.readFile(filepath, 'utf8', function(err, xmlStr){
@@ -19,7 +21,7 @@ function XMLtoJSON(filename, cb){
         xml2js.parseString(xmlStr, {}, cb);
     });
 };
-
+//and now back from json to xml
 function JSONtoXML(filename, obj, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     let builder = new xml2js.Builder();
@@ -27,7 +29,7 @@ function JSONtoXML(filename, obj, cb){
     fs.unlinkSync(filepath);
     fs.writeFile(filepath, xml, cb);
 };
-
+//server side for what the html does with the xml ansd xsl info
 router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'});
@@ -42,7 +44,7 @@ router.get('/get/html', function(req, res) {
 
     res.end(html.toString());
 });
-
+//function for submit button. it adds the info to the bottom of the right item back to the xml
 router.post('/post/json', function(req, res){
     function appendJSON(obj){
         console.log(obj);
@@ -61,6 +63,7 @@ router.post('/post/json', function(req, res){
     res.redirect('back');
 });
 
+//now delete button. deleting also from the xml.
 router.post('/post/delete', function (req,res) {
     function deleteJSON(obj) {
         console.log(obj);

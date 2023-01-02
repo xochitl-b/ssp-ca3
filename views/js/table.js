@@ -14,6 +14,7 @@ function draw_table(){
     };
     $.getJSONuncached("/get/html")
 };
+//making the table up after selecting object
 function select_row(){
     $("#menuTable tbody tr[id]").click(function(){
         $(".selected").removeClass("selected");
@@ -23,7 +24,7 @@ function select_row(){
         delete_row(section, entree);
     });
 };
-
+//forming table after deleting a row
 function delete_row(sec, ent){
     $("#delete").click(function (){
         $.ajax({
