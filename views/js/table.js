@@ -8,6 +8,7 @@ function draw_table(){
             cache: false,
             success: function(html){
                 $("#results").append(html);
+                select_row();
             }
         });
     };

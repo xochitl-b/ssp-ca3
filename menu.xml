@@ -25,14 +25,6 @@
       <wish>Spain</wish>
       <price>490</price>
     </item>
-    <item>
-      <wish>Ex</wish>
-      <price>10</price>
-    </item>
-    <item>
-      <wish/>
-      <price/>
-    </item>
   </category>
   <category name="Shows">
     <item>
@@ -50,6 +42,10 @@
     <item>
       <wish/>
       <price>10</price>
+    </item>
+    <item>
+      <wish>Test</wish>
+      <price>11q</price>
     </item>
   </category>
   <category name="Courses">
