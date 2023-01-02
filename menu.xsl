@@ -17,7 +17,7 @@
 						</td>
 					</tr>
 					<xsl:for-each select="item">
-						<tr>
+						<tr id="{position()}">
 							<xsl:attribute name="dogFriendly">
 								<xsl:value-of select="boolean(@dogFriendly)" />
 							</xsl:attribute>

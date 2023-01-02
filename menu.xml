@@ -29,6 +29,10 @@
       <wish>Ex</wish>
       <price>10</price>
     </item>
+    <item>
+      <wish/>
+      <price/>
+    </item>
   </category>
   <category name="Shows">
     <item>

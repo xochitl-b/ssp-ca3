@@ -23,3 +23,8 @@ td:nth-child(1), td:nth-child(3){
 th {
     font-weight: bold;
 }
+
+.selected {
+    background-color: #dc35;
+    color:black;
+}
