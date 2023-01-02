@@ -4,20 +4,34 @@ body {
 
 table {
     width:100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 table, th, td {
     border-collapse: collapse;
     border: 1px solid #ced4da;
     padding: 0.5rem;
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
 }
 
 td, th {
     text-align: left;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    color: #6c6c6c;
 }
 
 td:nth-child(1), td:nth-child(3){
     text-align: center;
+    background-color: #ffffff;
+    color: #009879;
 }
 
 th {
